@@ -1,0 +1,343 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  /* COLORS */
+  --pink: #e345fe;
+  --violet: #8c3afe;
+  --dark-purple: #3d2751;
+  --violet-gradient-desktop: linear-gradient(
+    180deg,
+    #8c3afe 0%,
+    #e345fe 53.37%
+  );
+  --violet-gradient-mobile: linear-gradient(
+    180deg,
+    #e345fe 40.45%,
+    #8c3afe 92.54%
+  );
+  --mess1: #ede5f4;
+  --mess2-white: #ffffff;
+  --screen-bg: #f5f3f8;
+  --grey: #929292;
+  /* FONTS WEIGHTS */
+  --light: 300;
+  --regular: 400;
+  --bold: 700;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background-color: var(--screen-bg);
+  margin: 0;
+}
+main {
+  display: grid;
+  grid-template-columns: 0.4fr 0.6fr;
+  min-height: 100vh;
+  place-items: center;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  padding: 0;
+  background-color: #ffffff00;
+  border: none;
+}
+h1,
+h2,
+p {
+  line-height: 1.25;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+h1 {
+  font-size: 0.75rem;
+  font-weight: var(--bold);
+}
+h2 {
+  font-size: 0.625rem;
+  font-style: italic;
+  font-weight: var(--light);
+}
+p {
+  font-size: 0.6rem;
+  font-weight: var(--regular);
+}
+
+.color-bg {
+  width: 25%;
+  height: 70%;
+  background: var(--violet-gradient-mobile);
+  border-radius: 0 0 15rem 15rem;
+  position: absolute;
+  right: 75vw;
+  top: 0;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  justify-self: self-start;
+  gap: 5rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.hero-text {
+  width: 100%;
+  max-width: 26.25rem;
+  line-height: 1.5;
+}
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: var(--dark-purple);
+}
+.hero-text p {
+  font-size: 1rem;
+  color: #6f6879;
+}
+.white-area {
+  width: 60%;
+  z-index: 1;
+  border-radius: 0 0 1rem 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 0;
+  background-color: white;
+}
+
+.cell-phone-section {
+  width: 14.06rem;
+  height: 29.81rem;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  justify-self: self-end;
+  right: 5vw;
+  z-index: 10;
+  box-sizing: content-box;
+  border: 1rem solid white;
+  box-shadow: 15px 28px 34px #dccbdf;
+  background: var(--screen-bg);
+  border-radius: 2rem;
+}
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--violet);
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  padding: 16px 10px 0px 6px;
+  gap: 24px;
+  height: 4rem;
+}
+header > div {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+header h1,
+header h2 {
+  color: white;
+}
+header h2 {
+  font-style: italic;
+  font-weight: var(--light);
+}
+
+header:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+.arrow-back {
+  padding: 0.5rem;
+  display: grid;
+  place-items: center;
+}
+.avatar {
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0.01rem solid white;
+}
+.personal-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.settings {
+  padding: 0 0.5rem;
+}
+.conversation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: var(--screen-bg);
+  position: relative;
+  height: -webkit-fill-available;
+  padding: 1rem 0;
+}
+.shadow {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.left,
+.right {
+  border-radius: 0.75rem;
+  max-width: 9.125rem;
+  position: relative;
+}
+.left {
+  margin-left: 0.5rem;
+  align-self: self-start;
+  color: var(--dark-purple);
+  background-color: var(--mess1);
+  padding: 6px 12px 6px 6px;
+}
+.right {
+  margin-right: 0.5rem;
+  align-self: self-end;
+  color: var(--grey);
+  background-color: var(--mess2-white);
+  padding: 6px 6px 6px 12px;
+}
+.dog-images {
+  margin-right: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-self: flex-end;
+  position: relative;
+  right: 0;
+}
+.dog-images img {
+  border-radius: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.dog-images img:hover {
+  scale: 1.1;
+}
+
+.pill {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  background: linear-gradient(151.41deg, #8c3afe -0.09%, #e345fe 30.01%);
+  border-radius: 1rem;
+  gap: 1rem;
+  align-self: flex-start;
+}
+.pill > div {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.circle {
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  border: 0.2rem solid #ffffff50;
+}
+.pill p {
+  font-size: 0.8rem;
+  color: var(--mess2-white);
+}
+
+.price {
+  font-family: "Anton", sans-serif;
+  font-size: 1.25rem;
+  color: var(--mess2-white);
+}
+
+.input-section {
+  margin: 0 0.5rem 1rem;
+  padding: 0.2rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--mess2-white);
+}
+input {
+  border: none;
+  padding: 0.25rem;
+}
+.submit-form {
+  display: grid;
+  place-items: center;
+  background-color: var(--dark-purple);
+  border-radius: 50%;
+  width: 1.75rem;
+  height: 1.75rem;
+}
+.input-section .svg-sizing {
+  height: 1rem;
+}
+input:focus {
+  outline: none;
+}
+::placeholder {
+  font-size: 0.75rem;
+
+  color: #92929280;
+}
+.submit-form img {
+  padding-left: 0.2rem;
+}
+
+@media (max-width: 900px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding: 2rem 0;
+  }
+  .hero-text {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-text h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .hero-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #6f6879;
+    text-align: center;
+  }
+  .info-section {
+    width: 82%;
+    line-height: 1.5;
+  }
+  .hero-text {
+    gap: 2rem;
+  }
+  .conversation {
+    gap: 0.5rem;
+  }
+  .info-section {
+    gap: 3rem;
+    align-items: center;
+  }
+  .cell-phone-section {
+    right: 0;
+  }
+  .color-bg {
+    width: 50%;
+    height: 60%;
+    right: 60vw;
+  }
+}

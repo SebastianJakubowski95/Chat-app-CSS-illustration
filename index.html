@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap"
+      rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="svg.css" />
+  </head>
+  <body>
+    <main>
+      <section class="cell-phone-section">
+        <div class="white-area"></div>
+        <header>
+          <div>
+            <button class="arrow-back">
+              <img
+                class="svg-sizing svg"
+                src="./images/arrow-back.svg"
+                alt="arrow-back" />
+            </button>
+            <img class="avatar" src="./images/avatar.jpg" alt="Samuel avatar" />
+            <div class="personal-data">
+              <h1>Samuel Green</h1>
+              <h2>Available to Walk</h2>
+            </div>
+          </div>
+          <button class="settings svg">
+            <img src="./images/settings-icon.svg" alt="settings" />
+          </button>
+        </header>
+        <div class="conversation">
+          <p class="left shadow">That sounds great. I’d be happy with that.</p>
+          <p class="left shadow">
+            Could you send over some pictures of your dog, please?
+          </p>
+          <div class="dog-images">
+            <img class="shadow" src="./images/dog-image-1.jpg" alt="dog1" />
+            <img class="shadow" src="./images/dog-image-2.jpg" alt="dog2" />
+            <img class="shadow" src="./images/dog-image-3.jpg" alt="dog3" />
+          </div>
+          <p class="right shadow">
+            Here are a few pictures. She’s a happy girl!
+          </p>
+          <p class="right shadow">Can you make it?</p>
+          <p class="left shadow">
+            She looks so happy! The time we discussed works. How long shall I
+            take her out for?
+          </p>
+          <div class="pill shadow">
+            <div>
+              <button class="circle"></button>
+              <p>30 minute walk</p>
+            </div>
+            <h2 class="price">$29</h2>
+          </div>
+          <div class="pill shadow">
+            <div>
+              <button class="circle"></button>
+              <p>1 hour walk</p>
+            </div>
+            <h2 class="price">$49</h2>
+          </div>
+        </div>
+
+        <form class="input-section">
+          <input
+            type="text"
+            name="input"
+            class="input"
+            placeholder="Type a message ..." />
+          <button class="submit-form">
+            <img
+              class="svg-sizing"
+              src="./images/arrow-next.svg"
+              alt="submit-form" />
+          </button>
+        </form>
+      </section>
+      <section class="info-section">
+        <div class="color-bg"></div>
+        <div class="hero-text">
+          <h1>Simple booking</h1>
+          <p>
+            Stay in touch with our dog walkers through the chat interface. This
+            makes it easy to discuss arrangements and make bookings. Once the
+            walk has been completed you can rate your walker and book again all
+            through the chat.
+          </p>
+        </div>
+        <button id="cta-btn" class="cta-btn">
+          <img class="cta-svg" src="./images/arrow-next.svg" alt="CTA button" />
+        </button>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Sebastian Jakubowski</a>.
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

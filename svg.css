@@ -1,0 +1,51 @@
+.svg:hover {
+  filter: invert(67%) sepia(39%) saturate(3798%) hue-rotate(279deg)
+    brightness(101%) contrast(102%);
+}
+.svg-sizing {
+  height: 2rem;
+}
+header .svg-sizing {
+  height: 1rem;
+}
+.input-section .svg-sizing {
+  height: 1rem;
+}
+
+.arrowSVG:hover {
+  filter: invert(51%) sepia(48%) saturate(5203%) hue-rotate(164deg)
+    brightness(99%) contrast(101%);
+  scale: 1.2;
+}
+
+.cta-btn {
+  padding: 1rem 3.75rem;
+  background: linear-gradient(151.41deg, #8c3afe -0.09%, #e345fe 61.01%);
+  box-shadow: 15px 28px 34px #dccbdf;
+  border-radius: 2.5rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.cta-svg {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.cta-btn-animation {
+  animation: cta 500ms 1;
+}
+@keyframes cta {
+  0% {
+    scale: 1;
+  }
+  25% {
+    scale: 1.05;
+  }
+  60% {
+    transform: rotate(-10deg);
+  }
+  80% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+    scale: 1;
+  }
+}
