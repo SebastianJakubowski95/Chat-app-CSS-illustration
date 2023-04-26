@@ -92,6 +92,9 @@ p {
   width: 100%;
   max-width: 26.25rem;
   line-height: 1.5;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 .hero-text h1 {
   font-size: 2.5rem;
