@@ -334,6 +334,7 @@ input:focus {
   }
   .cell-phone-section {
     right: 0;
+    height: fit-content;
   }
   .color-bg {
     width: 50%;
